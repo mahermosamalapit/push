@@ -41,13 +41,12 @@
   color: #888;
 }
 
-.formStyle {
+.form-div {
   display: flex;
   flex-direction: column;
 }
 
-/* Form Container */
-.formStyle {
+.form-div {
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
@@ -56,15 +55,16 @@
   width: 100%;
   max-width: 400px;
   text-align: center;
+  background-color: #19615d99;
 }
 
-.formStyle h3 {
+.form-div h3 {
   margin-bottom: 20px;
-  color: #007bff; /* Accent blue color */
+  color: #ffffff; 
   font-size: 1.5rem;
 }
 
-/* Input and Textarea */
+
 input[type="text"],
 textarea {
   width: 100%;
@@ -82,9 +82,9 @@ textarea {
   resize: none;
 }
 
-/* Add Task Button */
+
 button[type="submit"] {
-  background-color: #007bff;
+  background-color: #165753;
   color: white;
   padding: 10px 15px;
   font-size: 16px;
@@ -95,7 +95,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #073d3a;
 }
 
 
