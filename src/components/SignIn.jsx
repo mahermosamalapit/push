@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { auth, googleProvider } from '../firebase'
 import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
+import "../App.css";  // Import the CSS file
 
 export const SignIn = () => {
     const [email, setEmail] = useState('')
@@ -29,11 +30,12 @@ export const SignIn = () => {
     }
 
     return (
-        <div>
+        <div className="container">
             <h2>Login</h2>
-            <input type="email" onChange={(e) => setEmail(e.target.value)} placeholder='username ...' />
-            <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder='password ...' />
-            <button onClick={handleSignIn}>Login</button> or
+            <input type="email" onChange={(e) => setEmail(e.target.value)} placeholder='Email...' />
+            <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder='Password...' />
+            <button onClick={handleSignIn}>Login</button>
+            <p>or</p>
             <button onClick={handleSignInWithGoogle}>Login with Google</button>
             {error && <p>{error}</p>}
             <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
