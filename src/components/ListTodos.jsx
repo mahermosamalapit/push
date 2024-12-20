@@ -4,7 +4,7 @@ import { FaPlus } from "react-icons/fa";
 import { db } from '../firebase.js'
 import { collection, addDoc, getDocs, updateDoc, doc, deleteDoc } from 'firebase/firestore';
 import { SignOut } from './SignOut';
-import '../App.css'; 
+import '../App.css';  
 
 const ListTodos = ({ user }) => {
     const [loading, setLoading] = useState(true)

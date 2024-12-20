@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router'
 
 export const SignOut = () => {
     const navigate = useNavigate()
-
+ 
     const handleSignOut = async () => {
         await signOut(auth)
         navigate('/')

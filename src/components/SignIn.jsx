@@ -26,7 +26,7 @@ export const SignIn = () => {
             navigate('/')
         } catch (error) {
             setError(`Error in signing with google: ${error.message}`)
-        }
+        } 
     }
 
     return (

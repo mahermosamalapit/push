@@ -16,7 +16,7 @@ export const SignUp = () => {
         }
     }
 
-    return (
+    return ( 
         <div>
             <h2>Sign Up</h2>
             <input type="email" placeholder='username ...' onChange={(e) => setEmail(e.target.value)} />
