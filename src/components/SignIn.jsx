@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { auth, googleProvider } from '../firebase'
 import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
-import "../App.css";  // Import the CSS file
+import "../App.css"; 
 
 export const SignIn = () => {
     const [email, setEmail] = useState('')
